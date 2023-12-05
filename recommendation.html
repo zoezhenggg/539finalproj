@@ -29,33 +29,37 @@
                 justice, murders, religions, and more. Below are the ones I highly recommend.</p>
         </section>
 
-        <div class="button">
-            <button type="button" class="mixbutton mixitup-control-active" data-filter="all">All</button>
-            <button type="button" class="mixbutton" data-filter=".socialjustice">Social Justice</button>
-            <button type="button" class="mixbutton" data-filter=".music">Music</button>
-            <button type="button" class="mixbutton" data-filter=".technology">Technology</button>
-            <button type="button" class="mixbutton" data-filter=".crime">Crime</button>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('socialjustice')"> Social Justice</button>
+            <button class="btn" onclick="filterSelection('music')"> Music</button>
+            <button class="btn" onclick="filterSelection('technology')"> Technology</button>
+            <button class="btn" onclick="filterSelection('crime')"> Crime</button>
         </div>
 
-        <section id="film">
-
-            <a href="social_dilemma.html" class="documentary all technology">
-                <img src="images/social_dilemma.jpg" alt="The documentary poster of The Social Dilemma">
-            </a>
-
-            <a href="our_father.html" class="documentary all crime">
-                <img src="images/our_father.jpg" alt="The documentary poster of Our Father">
-            </a>
-
-            <a href="rbg.html" class="documentary all socialjustice">
-                <img src="images/rbg.jpg" alt="The documentary poster of RBG">
-            </a>
-
-            <a href="beyonce.html" class="documentary all music">
-                <img src="images/beyonce.jpg" alt="The documentary poster of Homecoming: A Film by Beyoncé">
-            </a>
-        </section>
-
+        <div class="container">
+            <div class="filterDiv socialjustice">
+                <a href="rbg.html">
+                    <img src="images/rbg.jpg" alt="The documentary poster of RBG">
+                </a>
+            </div>
+            <div class="filterDiv music">
+                <a href="beyonce.html">
+                    <img src="images/beyonce.jpg" alt="The documentary poster of Homecoming: A Film by Beyoncé">
+                </a>
+            </div>
+            <div class="filterDiv technology">
+                <a href="social_dilemma.html"">
+                    <img src=" images/social_dilemma.jpg" alt="The documentary poster of The Social Dilemma">
+                </a>
+            </div>
+            <div class="filterDiv crime">
+                <a href="our_father.html">
+                    <img src="images/our_father.jpg" alt="The documentary poster of Our Father">
+                </a>
+            </div>
+        </div>
 
 
     </main>
